@@ -65,7 +65,6 @@ def main():
     os.chdir("nmap_results")
 
     ips = parse_ip_range(ip_range)
-
     for ip in ips:
         print(f"Scanning {ip} on ports {port_range}...")
         run_nmap_scan(ip, port_range, nmap_options)
